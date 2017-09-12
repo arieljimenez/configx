@@ -1,39 +1,56 @@
-# Proyecto de Automatización de la configuración del ENV para Ubuntu.17.x64
+# Configx for Developer Env.
+>The main idea is run a simple (or severals) bash script and **TADAAA** developer environment **_up and runnig_** ...*YUP, like Docker but out of a containner*.
 
-## JS
-- Nvm: node 6.10.1 LTS / npm
+For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made for **ubuntu** and **xubuntu**, 'cause reasons and until now, **feedora** is not a dev friendly distribution *u_u*
 
-#### Dependencies
-    - Webpack 2
-    - Elm 0.18
-    - React
+## **Core langs**
+- *JS*
+- *Golang*
+- *Elm*
+- *Python*
 
-## Golang
-- Golang 1.8.3
+## **Details**
 
-#### Dependencies
-    - Gorm
-    - Watcher
+### JS
+- *Nvm: node 6.10.3 LTS / npm*
+- *Webpack 2*
+- *Elm 0.18*
+- *React*
 
-### CI
-- Docker CE
-- Jenkins (needs Java)
+### Golang
+- *Golang 1.8.3*
+- *Gorm*
+- *Watcher*
 
 ### Python
-- virtualenv
+- *Virtualenv*
+- *... i thin that i miss something :umh:*
 
-## IDEs
-- Visual Studio Code + config
+### Continuos Integration
+- *Docker CE*
+- *Vagrant*
+- *Jenkins (needs Java)*
 
-#### Plugins
-    - Elm Language Support
-    - Elm format
-    - HTML to Elm
-    - vscode-elm-jump
-    - Golang support
+### Text Editor
+- *Visual Studio Code + config*
+- *Plugins:*
+    - *Bash beautify*
+    - *CSS Minify*
+    - *Elm Language Support*
+    - *Elm format*
+    - *Go*
+    - *HTML to Elm*
+    - *Short lines*
+    - *vscode-elm-jump*
+    - *vscode-icons*
 
-## System Apps:
+## Apps:
+- *Git (with credentials and .gitconfig)*
+- *Terminator*
+- *Zsh*
+- *Oh-my-zsh + Powerlevel9k theme and his fonts.*
+- *Pinta*
 
-### Zsh
-- Oh-my-zsh
-- fonts
+### DISCLAIMER
+![disclaimer](https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png)
+
