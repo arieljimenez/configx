@@ -11,14 +11,19 @@ sudo apt install git \
                  terminator \
                  zsh \
                  pinta \
+                 libgl1-mesa-dri:i386 \
+                 libgl1-mesa-glx:i386 \
+                 libc6:i386 \
                  ~/Downloads/code_1.16.0_amd64.deb \
-                 ~/Downloads/google-chrome-stable_current_amd64.deb
-                 ~/Downloads/discord-0.0.2.deb
+                 ~/Downloads/google-chrome-stable_current_amd64.deb \
+                 ~/Downloads/discord-0.0.2.deb \
+                 ~/Downloads/steam_latest.deb \
                  -y
 
 # Spotify
 . spotify.sh
 
+# Good to know -> How to change the shell: $ chsh -s /bin/zsh
 # get Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
