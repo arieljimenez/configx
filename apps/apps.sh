@@ -13,6 +13,7 @@ sudo apt install git \
                  pinta \
                  ~/Downloads/code_1.16.0_amd64.deb \
                  ~/Downloads/google-chrome-stable_current_amd64.deb
+                 ~/Downloads/discord-0.0.2.deb
                  -y
 
 # Spotify
