@@ -11,6 +11,8 @@ sudo apt install git \
                  terminator \
                  zsh \
                  pinta \
+                 apt-transport-https \
+                 ca-certificates \
                  libgl1-mesa-dri:i386 \
                  libgl1-mesa-glx:i386 \
                  libc6:i386 \
@@ -19,6 +21,9 @@ sudo apt install git \
                  ~/Downloads/discord-0.0.2.deb \
                  ~/Downloads/steam_latest.deb \
                  -y
+
+# Docker CE
+. dcoker.sh # after this, to start using docker, we need to $ reboot
 
 # Spotify
 . spotify.sh
