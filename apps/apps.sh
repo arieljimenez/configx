@@ -11,6 +11,7 @@ sudo apt install git \
                  terminator \
                  zsh \
                  pinta \
+                 vim \
                  apt-transport-https \
                  ca-certificates \
                  libgl1-mesa-dri:i386 \
