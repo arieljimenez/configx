@@ -5,6 +5,13 @@
 # TODO: check if ~/.ssh exist to continue else BREAK
 sudo apt update && sudo apt upgrade -y && sudo apt auto-remove -y
 
+# Frontal Audio
+sudo apt install alsamixer
+# alsamixer -> Headphones un mute typing key 'm'
+# ESC to close
+sudo alsactl store
+# to store config
+
 # Dirs
 mkdir -p ~/Code/js \
          ~/Code/go/src/frismaury \

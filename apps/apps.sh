@@ -24,7 +24,7 @@ sudo apt install git \
                  -y
 
 # Docker CE
-. dcoker.sh # after this, to start using docker, we need to $ reboot
+. docker.sh # after this, to start using docker, we need to $ reboot
 
 # Spotify
 . spotify.sh
