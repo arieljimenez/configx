@@ -1,10 +1,10 @@
 #/bin/bash
-
 ################## DISCLAIMER ##################
 # # # # #   W O R K S  I N  M Y  P C   # # # # #
 ## Elementary OS 0.4.1 Loky (sep 2017)
 ## Intel i3 7100 8GB RAM
 ## GTX 1060 3 GB (Mini)
+## nVidia 375 drivers
 ################################################
 
 sudo dpkg --add-architecture i386
@@ -34,7 +34,7 @@ cd ~/LoL_Installer
 # Execute the installer
 WINEPREFIX=~/LoL32 wine msiexec /i LoL.LA1.msi
 #After install, check  "Open the game after install"
-# if not, rrun de Luncher
+# if not, run de Launcher
 WINEPREFIX=~/LoL32 wine "C:/Riot Games/League of Legends/lol.launcher.exe"
 
 # or run the game
@@ -46,7 +46,3 @@ WINEPREFIX=~/LoL32 wineserver -k
 
 #PD: after the game installs, we can delete ~/LoL_Installer dir.
 #PD2: Make an alias for run and kill lol
-
-
-
-
