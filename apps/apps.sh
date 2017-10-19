@@ -12,6 +12,7 @@ sudo apt install git \
                  zsh \
                  pinta \
                  vim \
+                 python-pip \
                  apt-transport-https \
                  ca-certificates \
                  libgl1-mesa-dri:i386 \
@@ -43,7 +44,7 @@ sudo fc-cache -vf /usr/share/fonts/type1 && \
 sudo fc-cache -vf /usr/share/fonts/truetype
 
 # copy terminator config into terminator dir
-yes | cp -f ../configs/config ~/.config/terminator/
+cp -f ../configs/config ~/.config/terminator/
 
 # TODO: Move the comments to a *.md file
 # See a valid path for fonts: $ xset q

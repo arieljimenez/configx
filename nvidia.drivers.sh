@@ -18,6 +18,7 @@ sudo reboot now
 
 # After reboot
 sudo lightdm stop
+sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo ubuntu-drivers list
 sudo ubuntu-drivers autoinstall

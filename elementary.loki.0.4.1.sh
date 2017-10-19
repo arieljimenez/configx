@@ -10,14 +10,14 @@ sudo apt install alsamixer
 # alsamixer -> Headphones un mute typing key 'm'
 # ESC to close
 sudo alsactl store
-# to store config
+# to store config # NOT WORKING
 
 # Dirs
 mkdir -p ~/Code/js \
-         ~/Code/go/src/frismaury \
+         ~/Code/go/src/github.com/frismaury \
          ~/Code/go/bin
 
 # TODO: PATH stuff
 
 # Install aps
-. ./apps/apps.sh
+. ./apps/apps.

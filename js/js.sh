@@ -12,5 +12,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# install node v6.11.3/npm v3.10.10 (waiting to v8 LTS come out)
-nvm install v6.11.3
+# install node v6.11.4/npm v3.10.10 (waiting to v8 LTS come out)
+nvm install v6.11.4

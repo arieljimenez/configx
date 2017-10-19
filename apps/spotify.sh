@@ -9,4 +9,4 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update
 
 # 4. Install Spotify
-sudo apt-get install spotify-client
+sudo apt-get install spotify-client -y
