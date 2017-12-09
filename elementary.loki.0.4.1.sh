@@ -15,7 +15,8 @@ sudo alsactl store
 # Dirs
 mkdir -p ~/Code/js \
          ~/Code/go/src/github.com/frismaury \
-         ~/Code/go/bin
+         ~/Code/go/bin \
+         ~/.config/terminator
 
 # TODO: PATH stuff
 
