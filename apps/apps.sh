@@ -74,6 +74,7 @@ cp ../configs/.gitconfig ~/.gitconfig
 # html-css-class-completion
 # sass-indented
 # vscode-json
+# lamartire.git-indicators
 
 # TODO: Move the comments to a *.md file
 # See a valid path for fonts: $ xset q

@@ -2,7 +2,7 @@
 	name = Ariel Jimenez
 	email = ajimenez@intellisys.com.do
 [core]
-    	autocrlf= true
+    	autocrlf= false
 [push]
     	default = simple
 [pull]
