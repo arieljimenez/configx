@@ -15,13 +15,9 @@ sudo apt install git \
                  python-pip \
                  apt-transport-https \
                  ca-certificates \
-                 libgl1-mesa-dri:i386 \
-                 libgl1-mesa-glx:i386 \
-                 libc6:i386 \
                  ~/Downloads/visual_studio_code.amd64.deb \
                  ~/Downloads/google-chrome-stable_current_amd64.deb \
                  ~/Downloads/discord-0.0.2.deb \
-                 ~/Downloads/steam.deb \
                  --fix-missing \
                  -y
 
@@ -30,6 +26,9 @@ sudo apt install git \
 
 # Spotify
 . spotify.sh
+
+# Steam
+. steam.sh
 
 # Good to know -> How to change the shell: $ chsh -s /bin/zsh
 # get Oh-my-zsh
