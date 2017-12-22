@@ -1,8 +1,28 @@
-# 12/9/2017
-
+# 12/22/2017
 export TERM="xterm-256color"
+
+# PATH STUFF
 export ZSH=/home/$USER/.oh-my-zsh
+
 export PATH=/opt/firefox:$PATH
+export PATH="$PATH:/usr/local/bin:/usr/local/go/bin:/home/$USER/Code/go/bin"
+
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/Code/go"
+
+# IF BASH change de zsh to bash
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /usr/local/google-cloud-sdk/path.zsh.inc ]; then
+  source '/usr/local/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /usr/local/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/usr/local/google-cloud-sdk/completion.zsh.inc'
+fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # POWERLEVEL9K_MODE='awesome-fontconfig'
 # POWERLEVEL9K_MODE='poweline-simbols'
@@ -23,5 +43,4 @@ POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}'
 
 if [ -f ~/.zshprofile ]; then
     . ~/.zshprofile
-    echo "sourcing zshprofile"
 fi

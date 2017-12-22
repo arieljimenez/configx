@@ -1,68 +1,16 @@
-# PATH STUFF
-export PATH="$PATH:/usr/local/bin:/usr/local/go/bin:/home/$USER/Code/go/bin"
-
-export GOROOT="/usr/local/go"
-export GOPATH="$HOME/Code/go"
-
-# IF BASH change de zsh to bash
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /home/$USER/.sdks/google-cloud-sdk/path.zsh.inc ]; then
-  source '/home/$USER/.sdks/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /home/$USER/.sdks/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/home/$USER/.sdks/google-cloud-sdk/completion.zsh.inc'
-fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+echo 'sourcing zshprofile'
 
 # ALIAS
-alias dnf='sudo apt update && sudo apt upgrade -y && sudo apt autoremove'
-alias gitg='git log --oneline --graph -15'
-alias cme='cd ~/Code/go/src/github.com/intellisys/'
+alias dnf='sudo apt update && sudo apt upgrade -y && sudo apt auto-remove -y'
+alias gitl='git log --graph --branches --oneline --decorate --color "-n$1"'
+alias dockerdc='docker rm $(docker ps -a -q)'
+alias dockerdi='docker rmi $(docker images -a)'
+alias conto='git gc && git add . && git commit --amend --no-edit | git push -f origin $(git symbolic-ref --short -q HEAD)'
+alias duu='du -ahc'
 
 # HELPERS
 mk () {
   echo "Creating $1 dir and cd't"
   mkdir $1
   cd $1
-}
-
-gitl() {
-  git log --graph --oneline -$1
-}
-
-gmcme(){
-  cd /home/intellisys/Code/go/src/github.com/intellisys/
-  echo "======================================================"
-  echo "==   Entering to cme repos and checkout to master   =="
-  echo "======================================================"
-  echo "cme root repo"
-  git checkout develop && sleep 1
-
-  echo "=================="
-  echo "cme client app"
-  cd ./cme-client-app && git checkout master && sleep 1 && timeout 5 git pull && cd /home/intellisys/Code/go/src/github.com/intellisys/
-
-  echo "=================="
-  echo "cme cms app"
-  cd ./cme-cms-app && git checkout master && sleep 1 && timeout 5 git pull && cd /home/intellisys/Code/go/src/github.com/intellisys/
-
-  echo "=================="
-  echo "cme api"
-  cd ./cme-api-service && git checkout master && sleep 1 && timeout 5 git pull && cd /home/intellisys/Code/go/src/github.com/intellisys/
-
-  echo "=================="
-  echo "cme routing service"
-  cd ./cme-routing-service && git checkout master && sleep 1 && timeout 5 git pull && cd /home/intellisys/Code/go/src/github.com/intellisys/
-
-  echo "=================="
-  echo "cme app utils"
-  cd ./cme-app-utils && git checkout master && sleep 1 && timeout 5 git pull && cd /home/intellisys/Code/go/src/github.com/intellisys/
-
-  echo "=================="
-  echo "===    DONE    ==="
-  echo "=================="
 }
