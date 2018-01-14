@@ -9,7 +9,7 @@
     // "terminal.integrated.fontFamily": "Consolas",
     // "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "terminal.integrated.fontSize": 16,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
 
     "editor.fontSize": 14,
     "editor.tabSize": 4,
@@ -42,13 +42,13 @@
         "**/elm-stuff": true,
         "**/.github": true,
         "**/node_modules": true,
-        "**/117*": true //ignore webpack  temp files
+        "**/118*": true //ignore webpack  temp files
     },
 
     // Set the address of the Elm Reactor server.
-    "elm.reactorHost": "0.0.0.0",
-    "elm.reactorPort": 9000,
-    "elm.formatOnSave": true,
+    // "elm.reactorHost": "0.0.0.0",
+    // "elm.reactorPort": 9000,
+    // "elm.formatOnSave": true,
 
     //Go configuration
     "go.lintTool": "golint",

@@ -5,11 +5,11 @@
 # TODO: check if ~/.ssh exist to continue else BREAK
 sudo apt update && sudo apt upgrade -y && sudo apt auto-remove -y
 
-# Frontal Audio
-sudo apt install alsamixer
+# Frontal Audio for Desktop
+# sudo apt install alsamixer
 # alsamixer -> Headphones un mute typing key 'm'
 # ESC to close
-sudo alsactl store
+# sudo alsactl store
 # to store config # NOT WORKING
 
 # Dirs

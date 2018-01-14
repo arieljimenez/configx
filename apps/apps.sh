@@ -17,7 +17,6 @@ sudo apt install git \
                  ca-certificates \
                  ~/Downloads/visual_studio_code.amd64.deb \
                  ~/Downloads/google-chrome-stable_current_amd64.deb \
-                 ~/Downloads/discord-0.0.2.deb \
                  --fix-missing \
                  -y
 
@@ -60,9 +59,13 @@ cp ../configs/settings.json ~/.config/Code/User/settings.json
 cp ../configs/.gitconfig ~/.gitconfig
 
 # VCode plugins:
+# to install extensions
+# ---> code --install-extension DavidAnson.vscode-markdownlint <---
+# Tyriar.sort-lines
 # vscode-icons
 # gitlens
 # vscode-docker
+# formulahendry.docker-explorer
 # elm
 # vscode-html-to-elm
 # vscode-elm-jump
@@ -70,10 +73,12 @@ cp ../configs/.gitconfig ~/.gitconfig
 # autoprefixer
 # language-stylus
 # vscode-css-to-stylus
-# html-css-class-completion
+# Zignd.html-css-class-completion
 # sass-indented
+# ritwickdey.live-sass
 # vscode-json
 # lamartire.git-indicators
+# bierner.markdown-emoji
 
 # TODO: Move the comments to a *.md file
 # See a valid path for fonts: $ xset q

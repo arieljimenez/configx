@@ -1,7 +1,7 @@
 # Configx for Developer Env.
->The main idea is run a simple (or severals) bash script and **TADAAA** developer environment **_up and runnig_** ...*YUP, like Docker but out of a containner*.
+>The main idea is run a simple (or severals) bash script and :tada: developer environment **_up and runnig_** ...*YUP, like Docker but out of a containner*.
 
-For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made for **ubuntu** and **xubuntu**, 'cause reasons and until now, **feedora** is not a dev friendly distribution *u_u*
+For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made for **ubuntu** and **xubuntu**, 'cause reasons and until now, **fedora** is not a dev friendly distribution *u_u*
 
 ## **Core langs**
 - *JS*
@@ -13,11 +13,13 @@ For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made
 
 ### JS
 - *Nvm: node 6.10.3 LTS / npm*
+
 - *Webpack 2*
 - *Elm 0.18*
 - *React*
 
 ### Golang
+
 - *Golang 1.8.3*
 - *Gorm*
 - *Watcher*
@@ -32,17 +34,18 @@ For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made
 - *Jenkins (needs Java)*
 
 ### Text Editor
+
 - *Visual Studio Code + config*
 - *Plugins:*
-    - *Bash beautify*
-    - *CSS Minify*
-    - *Elm Language Support*
-    - *Elm format*
-    - *Go*
-    - *HTML to Elm*
-    - *Short lines*
-    - *vscode-elm-jump*
-    - *vscode-icons*
+    * *Bash beautify*
+    * *CSS Minify*
+    * *Elm Language Support*
+    * *Elm format*
+    * *Go*
+    * *HTML to Elm*
+    * *Short lines*
+    * *vscode-elm-jump*
+    * *vscode-icons*
 
 ## Apps:
 - *Git (with credentials and .gitconfig)*
@@ -52,5 +55,5 @@ For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made
 - *Pinta*
 
 ### DISCLAIMER
-![disclaimer](https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png)
 
+![disclaimer](https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png)
