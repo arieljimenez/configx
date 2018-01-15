@@ -1,9 +1,11 @@
-# Configx for Developer Env.
+# Configx for Developer Environment
+
 >The main idea is run a simple (or severals) bash script and :tada: developer environment **_up and runnig_** ...*YUP, like Docker but out of a containner*.
 
 For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made for **ubuntu** and **xubuntu**, 'cause reasons and until now, **fedora** is not a dev friendly distribution *u_u*
 
 ## **Core langs**
+
 - *JS*
 - *Golang*
 - *Elm*
@@ -11,49 +13,58 @@ For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made
 
 ## **Details**
 
-### JS
-- *Nvm: node 6.10.3 LTS / npm*
+---
 
-- *Webpack 2*
-- *Elm 0.18*
-- *React*
+### JS
+
+- nvm: 0.33.7
+- node 8.9.1 LTS
+- npm 5.5.1
+- *Webpack 2* [not yet]
+- *Elm 0.18* [not yet]
+- *React* [not yet]
 
 ### Golang
 
-- *Golang 1.8.3*
-- *Gorm*
-- *Watcher*
+- Golang 1.9.2
+- *Gorm* [not yet]
+- *Watcher* [not yet]
 
 ### Python
-- *Virtualenv*
-- *... i thin that i miss something :umh:*
+
+- pip
+- *Virtualenv* [not yet]
 
 ### Continuos Integration
-- *Docker CE*
-- *Vagrant*
-- *Jenkins (needs Java)*
 
-### Text Editor
+- Docker CE
+- *Vagrant* [not yet]
+- *Jenkins (needs Java)* [not yet]
 
-- *Visual Studio Code + config*
-- *Plugins:*
-    * *Bash beautify*
-    * *CSS Minify*
-    * *Elm Language Support*
-    * *Elm format*
-    * *Go*
-    * *HTML to Elm*
-    * *Short lines*
-    * *vscode-elm-jump*
-    * *vscode-icons*
+### Text Editors
 
-## Apps:
-- *Git (with credentials and .gitconfig)*
-- *Terminator*
-- *Zsh*
-- *Oh-my-zsh + Powerlevel9k theme and his fonts.*
-- *Pinta*
+- vim
+- Visual Studio Code: config + plugins :ok_hand:
 
-### DISCLAIMER
+## Apps
 
-![disclaimer](https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png)
+- Terminator + config
+- Zsh
+- Oh-my-zsh + Powerlevel9k theme and his fonts.
+- Pinta
+- Spotify
+- Steam
+- Chrome
+- Firefox
+- League Of Legends (instructions)
+
+---
+
+## DISCLAIMER
+
+---
+
+![disclaimer][disclamer-logo]
+
+<!-- images -->
+[disclamer-logo]:https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png

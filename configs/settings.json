@@ -2,7 +2,7 @@
 {
     //linux
     // "terminal.external.linuxExec": "bash",
-    // "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
     "terminal.integrated.fontFamily": "Inconsolata for Powerline",
     //Gwindows
     //"terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\sh.exe",

@@ -14,3 +14,7 @@ mk () {
   mkdir $1
   cd $1
 }
+
+gitl() {
+  git log --graph --oneline -$1
+}
