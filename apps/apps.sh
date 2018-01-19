@@ -57,23 +57,6 @@ cp ../configs/settings.json ~/.config/Code/User/settings.json
 # Git config
 cp ../configs/.gitconfig ~/.gitconfig
 
-# VCode plugins:
-# vscode-icons
-# gitlens
-# vscode-docker
-# elm
-# vscode-html-to-elm
-# vscode-elm-jump
-# go
-# autoprefixer
-# language-stylus
-# vscode-css-to-stylus
-# html-css-class-completion
-# sass-indented
-# vscode-json
-# lamartire.git-indicators
-# wakatime
-
 # TODO: Move the comments to a *.md file
 # See a valid path for fonts: $ xset q
 # and later: $ fc-cache -vf (sudo if the path is forbidden)

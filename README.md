@@ -58,11 +58,7 @@ For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made
 - Firefox
 - League Of Legends (instructions)
 
----
-
 ## DISCLAIMER
-
----
 
 ![disclaimer][disclamer-logo]
 
