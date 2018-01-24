@@ -42,7 +42,8 @@
         "**/elm-stuff": true,
         "**/.github": true,
         "**/node_modules": true,
-        "**/118*": true //ignore webpack  temp files
+        "**/118*": true, //ignore webpack  temp files
+        "**/*.pyc": true
     },
 
     // Set the address of the Elm Reactor server.

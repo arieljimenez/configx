@@ -24,7 +24,8 @@ code --install-extension michelemelluso.code-beautifier && \
 code --install-extension andyyaldoo.vscode-json && \
 code --install-extension lamartire.git-indicators && \
 code --install-extension bierner.markdown-emoji && \
-code --install-extension WakaTime.vscode-wakatime
+code --install-extension WakaTime.vscode-wakatime && \
+code --install-extension ms-python.python
 
 # BETA
 # necinc.elmmet
