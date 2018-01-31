@@ -32,7 +32,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir dir_writable)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir virtualenv dir_writable)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs time)
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='white'
 

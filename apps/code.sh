@@ -25,7 +25,8 @@ code --install-extension andyyaldoo.vscode-json && \
 code --install-extension lamartire.git-indicators && \
 code --install-extension bierner.markdown-emoji && \
 code --install-extension WakaTime.vscode-wakatime && \
-code --install-extension ms-python.python
+code --install-extension ms-python.python && \
+code --install-extension wholroyd.jinja
 
 # BETA
 # necinc.elmmet

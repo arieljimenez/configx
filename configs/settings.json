@@ -43,7 +43,8 @@
         "**/.github": true,
         "**/node_modules": true,
         "**/118*": true, //ignore webpack  temp files
-        "**/*.pyc": true
+        "**/*.pyc": true,
+        "**/env": true //ignore virtualenv dir.... if is called env ofc
     },
 
     // Set the address of the Elm Reactor server.
@@ -60,5 +61,19 @@
     "extensions.autoUpdate": false,
     "workbench.startupEditor": "newUntitledFile",
     "git.enableSmartCommit": true,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressUpdateNotice": true,
+        "suppressWelcomeNotice": false
+    },
+    "files.associations": {
+        "*.j2": "html"
+    }
 }
