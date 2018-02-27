@@ -27,6 +27,7 @@ code --install-extension bierner.markdown-emoji && \
 code --install-extension WakaTime.vscode-wakatime && \
 code --install-extension ms-python.python && \
 code --install-extension wholroyd.jinja
+code --install-extension HookyQR.minify
 
 # BETA
 # necinc.elmmet
