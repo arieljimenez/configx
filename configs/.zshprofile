@@ -14,6 +14,7 @@ alias wip='git commit -am "WIP"'
 alias undo='git reset HEAD~1 --mixed'
 alias bclean='git checkout "${1:-master}" && git branch --merged "${1:-master}" | grep -v " ${1:-master}$" | xargs git branch -d'
 alias up='git gc && git pull --rebase --prune $@ && git submodule update --init --recursive'
+alias lsb='git branch'
 
 # HELPERS
 mk () {
