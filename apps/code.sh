@@ -29,6 +29,7 @@ code --install-extension ms-python.python
 code --install-extension wholroyd.jinja
 code --install-extension HookyQR.minify
 code --install-extension techer.open-in-browser
+code --install-extension ms-mssql.mssql
 
 # BETA
 # necinc.elmmet
