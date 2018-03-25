@@ -1,20 +1,26 @@
-echo 'sourcing zshprofile'
-
 # ALIAS
-alias dnf='sudo apt update && sudo apt upgrade -y && sudo apt auto-remove -y'
+alias dnf='sudo apt update --fix-missing && sudo apt upgrade -y && sudo apt auto-remove -y'
+alias klol='WINEPREFIX=~/LoL32 wineserver -k'
+alias dudir='du --max-depth=1 -h'
+
 alias dockerdc='docker rm $(docker ps -a -q)'
 alias dockerdi='docker rmi $(docker images -a)'
 alias duu='du -ahc'
 
+# projects
+alias pybanca='cd ~/Code/py/pybanca'
+alias gedetra='cd ~/Code/py/gedetra'
+
 # Git
 alias gitl='git log --graph --branches --oneline --decorate --color "-n$1"'
-alias conto='git gc && git add . && git commit --amend --no-edit | git push -f origin $(git symbolic-ref --short -q HEAD)'
 alias save='git add -A && git commit -m "SAVEPOINT"'
-alias wip='git commit -am "WIP"'
+alias wip='git add -A && git commit -am "WIP"'
 alias undo='git reset HEAD~1 --mixed'
-alias bclean='git checkout "${1:-master}" && git branch --merged "${1:-master}" | grep -v " ${1:-master}$" | xargs git branch -d'
-alias up='git gc && git pull --rebase --prune $@ && git submodule update --init --recursive'
 alias lsb='git branch'
+alias commit='git add . && git commit -m $1'
+# alias bclean='git checkout "${1:-master}" && git branch --merged "${1:-master}" | grep -v " ${1:-master}$" | xargs git branch -d'
+# alias up='git gc && git pull --rebase --prune $@ && git submodule update --init --recursive'
+#alias conto='git gc && git add . && git commit --amend --no-edit | git push -f origin $(git symbolic-ref --short -q HEAD)'
 
 # HELPERS
 mk () {
@@ -22,21 +28,3 @@ mk () {
   mkdir $1
   cd $1
 }
-
-gitl() {
-  git log --graph --oneline -$1
-}
-
-# IF BASH change de zsh to bash
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /home/$USER/.sdks/google-cloud-sdk/path.zsh.inc ]; then
-  source '/home/$USER/.sdks/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /home/$USER/.sdks/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/home/$USER/.sdks/google-cloud-sdk/completion.zsh.inc'
-fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

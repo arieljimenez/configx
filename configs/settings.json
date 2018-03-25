@@ -74,6 +74,7 @@
         "suppressWelcomeNotice": false
     },
     "files.associations": {
-        "*.j2": "html"
+        "*.j2": "html",
+        ".zshprofile": "shellscript"
     }
 }
