@@ -26,9 +26,3 @@
   untracked = magenta bold
 [color "branch"]
   remote = yellow
-# [merge]
-# 	tool = meld
-# [diff]
-# 	tool = meld
-# [mergetool "meld"]
-# 	path = C:\\Program Files (x86)\\Meld\\meld.exe

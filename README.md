@@ -1,32 +1,35 @@
 # Configx for Developer Environment
 
->The main idea is run a simple (or severals) bash script and :tada: developer environment **_up and runnig_** ...*YUP, like Docker but out of a containner*.
+>Mac adaptation of all the linux scripts.
 
-For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made for **ubuntu** and **xubuntu**, 'cause reasons and until now, **fedora** is not a dev friendly distribution *u_u*
+## **Details**
+
+First, we need to take a :beer: and install [brew][brew]:
+
+`$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+And then create a new pair of ssh keys:
+
+ `$ ssh-keygen -t rsa -b 4096 -C "ariel.jimenez2025@gmail.com"`
+
+Now, just left __do the thing__.
 
 ## **Core langs**
 
 - *JS*
 - *Golang*
 - *Elm*
-- *Python*
+- *Python* **2.7+** && **3.5+**
 
-## **Details**
+## JS
 
----
-
-### JS
-
-- nvm: 0.33.7
-- node 8.9.1 LTS
-- npm 5.5.1
-- *Webpack 2* [not yet]
-- *Elm 0.18* [not yet]
-- *React* [not yet]
+- nvm
+- node (latest LTS) && npm
+- yarn :cat:
 
 ### Golang
 
-- Golang 1.9.2
+- Golang
 - *Gorm* [not yet]
 - *Watcher* [not yet]
 
@@ -38,29 +41,28 @@ For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made
 ### Continuos Integration
 
 - Docker CE
-- *Vagrant* [not yet]
 - *Jenkins (needs Java)* [not yet]
 
 ### Text Editors
 
-- vim
-- Visual Studio Code: config + plugins :ok_hand:
+- Visual Studio Code - Launch code from terminal
+  - Launch VS Code.
+  - Open the Command Palette (⇧⌘P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
+  - Restart the terminal for the new $PATH value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder.
+- Custom stuff:
+  - config -> `./configs/settings.json`
+  - plugins :ok_hand: -> `sh ./apps/code.sh`
 
 ## Apps
 
-- Terminator + config
+- Tmux ~~Terminator + config~~
 - Zsh
 - Oh-my-zsh + Powerlevel9k theme and his fonts.
-- Pinta
-- Spotify
-- Steam
-- Chrome
-- Firefox
-- League Of Legends (instructions)
 
 ## DISCLAIMER
 
 ![disclaimer][disclamer-logo]
 
-<!-- images -->
+<!-- links -->
 [disclamer-logo]:https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png
+[brew]:https://brew.sh/

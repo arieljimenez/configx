@@ -1,9 +1,3 @@
-# Dowonload the latest vscode (they update the ref not the link :)
-wget https://go.microsoft.com/fwlink/?LinkID=760868 && \
-mv index.html\?LinkID=760868 code.deb
-
-# install't
-sudo apt install ./code.deb -y && rm -f code.deb
 
 # now the good part.... install all the extensions ~at once~ one by one... -.-
 # TODO: do a foreach with a file or an array.
@@ -29,7 +23,7 @@ code --install-extension ms-python.python
 code --install-extension wholroyd.jinja
 code --install-extension HookyQR.minify
 code --install-extension techer.open-in-browser
-code --install-extension ms-mssql.mssql
+# code --install-extension ms-mssql.mssql
 
 # BETA
 # necinc.elmmet
