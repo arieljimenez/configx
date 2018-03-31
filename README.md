@@ -10,7 +10,9 @@ First, we need to take a :beer: and install [brew][brew]:
 
 And then create a new pair of ssh keys:
 
- `$ ssh-keygen -t rsa -b 4096 -C "ariel.jimenez2025@gmail.com"`
+`$ ssh-keygen -t rsa -b 4096 -C "ariel.jimenez2025@gmail.com"`
+
+For copy the highlighted text, move the `macpaste` file to anywhere in $PATH places, like `/usr/local/bin` and run it as a "Login Item" at startup (System Preferences > Users & Groups > Login Items > + > Navigate to file).
 
 Now, just left __do the thing__.
 
@@ -23,8 +25,8 @@ Now, just left __do the thing__.
 
 ## JS
 
-- nvm
-- node (latest LTS) && npm
+- nvm 0.33.7
+- node 8.11.1 && npm 5.6.0
 - yarn :cat:
 
 ### Golang
@@ -36,11 +38,10 @@ Now, just left __do the thing__.
 ### Python
 
 - pip
-- *Virtualenv* [not yet]
 
 ### Continuos Integration
 
-- Docker CE
+- Docker CE (Latest stable channel [here][docker])
 - *Jenkins (needs Java)* [not yet]
 
 ### Text Editors
@@ -66,3 +67,4 @@ Now, just left __do the thing__.
 <!-- links -->
 [disclamer-logo]:https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png
 [brew]:https://brew.sh/
+[docker]:https://download.docker.com/mac/stable/Docker.dmg
