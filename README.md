@@ -29,6 +29,10 @@ Now, just left __do the thing__.
 - node 8.11.1 && npm 5.6.0
 - yarn :cat:
 
+> To develop Elm apps, must install Elm globally: `$ npm i -g elm` and later go to elm-format [repo][elm-format] and download the mac version and put in `/usr/local/bin`. Also:
+- put the absolute url of elm-make in VS config: `"elm.makeCommand": "$HOME/.nvm/versions/node/$NODE_VER/bin/elm-make",`
+- and double check that the nvm path stuff is loaded in bash.
+
 ### Golang
 
 - Golang
@@ -68,3 +72,4 @@ Now, just left __do the thing__.
 [disclamer-logo]:https://blog.codinghorror.com/content/images/uploads/2007/03/6a0120a85dcdae970b0128776ff992970c-pi.png
 [brew]:https://brew.sh/
 [docker]:https://download.docker.com/mac/stable/Docker.dmg
+[elm-format]:https://github.com/avh4/elm-format/releases
