@@ -24,6 +24,7 @@ code --install-extension wholroyd.jinja
 code --install-extension HookyQR.minify
 code --install-extension techer.open-in-browser
 # code --install-extension ms-mssql.mssql
+code --install-extension formulahendry.auto-close-tag
 
 # BETA
 # necinc.elmmet
