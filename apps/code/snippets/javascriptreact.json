@@ -1,0 +1,34 @@
+{
+  "react_component": {
+    "prefix": "react:c",
+    "body": [
+      "const React = require('react');",
+      "const PropTypes = require('prop-types');",
+      "",
+      "",
+      "class ${TM_FILENAME_BASE} extends React.Component {",
+      "\tconstructor(props) {",
+      "\t\tsuper(props);",
+      "",
+      "\t\tthis.state = {",
+      "\t\t\tfoo: 'bar',",
+      "\t\t};",
+      "\t}",
+      "",
+      "\trender(){",
+      "\t\treturn(",
+      "\t\t\t$0",
+      "\t\t)",
+      "\t}",
+      "}",
+      "",
+      "${TM_FILENAME_BASE}.propTypes = {",
+      "\tfoo: PropTypes.fooType.isRequired,",
+      "}",
+      "",
+      "module.exports = ${TM_FILENAME_BASE};",
+      ""
+    ],
+    "description": "React component boilerplate"
+  },
+}
