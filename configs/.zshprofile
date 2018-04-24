@@ -18,8 +18,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 ######################### ALIAS ##########################################
-alias dnf='sudo apt update --fix-missing && sudo apt upgrade -y && sudo apt auto-remove -y'
-alias klol='WINEPREFIX=~/LoL32 wineserver -k'
+# alias dnf='sudo apt update --fix-missing && sudo apt upgrade -y && sudo apt auto-remove -y'
+# alias klol='WINEPREFIX=~/LoL32 wineserver -k'
 alias dudir='du --max-depth=1 -h'
 
 alias dockerdc='docker rm $(docker ps -a -q)'
@@ -29,6 +29,8 @@ alias duu='du -ahc'
 # projects
 alias pybanca='cd ~/Code/py/pybanca'
 alias gedetra='cd ~/Code/py/gedetra'
+alias iventory='cd ~/Code/go/src/github.com/arieljimenez/iventory'
+alias godev='cd ~/Code/go/src/github.com/arieljimenez'
 
 # Git
 alias gitl='git log --graph --branches --oneline --decorate --color "-n$1"'

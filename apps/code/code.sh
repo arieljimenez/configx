@@ -1,4 +1,3 @@
-
 # now the good part.... install all the extensions ~at once~ one by one... -.-
 # TODO: do a foreach with a file or an array.
 code --install-extension DavidAnson.vscode-markdownlint
