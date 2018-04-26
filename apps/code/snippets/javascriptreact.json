@@ -1,12 +1,29 @@
 {
-  "react_component": {
-    "prefix": "react:c",
+  "React Native Functional Component": {
+    "prefix": "rrfc",
     "body": [
-      "const React = require('react');",
-      "const PropTypes = require('prop-types');",
+      "import React from 'react'",
+      "import { View, StyleSheet, Text } from 'react-native'",
       "",
       "",
-      "class ${TM_FILENAME_BASE} extends React.Component {",
+      "export default function ${TM_FILENAME_BASE} (props) {",
+      "\treturn(",
+      "\t\t$0",
+      "\t)",
+      "}",
+      "",
+    ],
+    "description": "React Native Functional Component"
+  },
+  "React Native Statefull Component": {
+    "prefix": "rrsc",
+    "body": [
+      "import React from 'react'",
+      "import { View, StyleSheet, Text } from 'react-native'",
+      "import PropTypes from 'prop-types'",
+      "",
+      "",
+      "default export class ${TM_FILENAME_BASE} extends React.Component {",
       "\tconstructor(props) {",
       "\t\tsuper(props);",
       "",
@@ -25,10 +42,8 @@
       "${TM_FILENAME_BASE}.propTypes = {",
       "\tfoo: PropTypes.fooType.isRequired,",
       "}",
-      "",
-      "module.exports = ${TM_FILENAME_BASE};",
       ""
     ],
-    "description": "React component boilerplate"
+    "description": "React Native Statefull Component"
   },
 }
