@@ -1,9 +1,10 @@
 {
   "React Native Functional Component": {
-    "prefix": "rrfc",
+    "prefix": "ffrfc",
     "body": [
       "import React from 'react'",
       "import { View, StyleSheet, Text } from 'react-native'",
+      "import PropTypes from 'prop-types'",
       "",
       "",
       "export default function ${TM_FILENAME_BASE} (props) {",
@@ -12,11 +13,19 @@
       "\t)",
       "}",
       "",
+      "${TM_FILENAME_BASE}.propTypes = {",
+      "\tfoo: PropTypes.fooType.isRequired,",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "",
+      "})",
+      ""
     ],
     "description": "React Native Functional Component"
   },
   "React Native Statefull Component": {
-    "prefix": "rrsc",
+    "prefix": "ffrsc",
     "body": [
       "import React from 'react'",
       "import { View, StyleSheet, Text } from 'react-native'",
@@ -42,6 +51,10 @@
       "${TM_FILENAME_BASE}.propTypes = {",
       "\tfoo: PropTypes.fooType.isRequired,",
       "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "",
+      "})",
       ""
     ],
     "description": "React Native Statefull Component"
