@@ -1,11 +1,11 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontFamily": "Inconsolata for Powerline",
     "terminal.integrated.fontSize": 16,
     "window.zoomLevel": 0,
     "editor.fontSize": 14,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.cursorStyle": "block",
     "editor.insertSpaces": true,
     "editor.minimap.enabled": false,

@@ -25,7 +25,7 @@ Now, just left __do the thing__.
 
 ## JS
 
-- nvm 0.33.7
+- nvm 0.33.8
 - node 8.11.1 && npm 5.6.0
 - yarn :cat:
 
@@ -60,7 +60,7 @@ Now, just left __do the thing__.
 
 ## Apps
 
-- Tmux ~~Terminator + config~~
+- iTerm2 + color scheme.
 - Zsh
 - Oh-my-zsh + Powerlevel9k theme and his fonts.
 
