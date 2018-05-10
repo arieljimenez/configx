@@ -6,11 +6,13 @@
 #   iterm https://www.iterm2.com
 #   spectacle (window manager) https://www.spectacleapp.com/
 #   slack
+#   etcher (flavors burner) https://etcher.io/
 #
 # Manually install:
 #   fonts
 #   iterm-colors
 #   terminal profile
+
 
 # Cheers!🍺
 brew install \
