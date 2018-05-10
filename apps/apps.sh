@@ -15,6 +15,7 @@ sudo apt install git \
                  python-pip \
                  apt-transport-https \
                  ca-certificates \
+                 woeusb \
                  ~/Downloads/visual_studio_code.amd64.deb \
                  ~/Downloads/google-chrome-stable_current_amd64.deb \
                  --fix-missing \

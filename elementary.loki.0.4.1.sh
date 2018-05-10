@@ -3,6 +3,9 @@
 # before start, update the system
 
 # TODO: check if ~/.ssh exist to continue else BREAK
+# add WoeUSB repo
+sudo add-apt-repository ppa:nilarimogard/webupd8
+
 sudo apt update && sudo apt upgrade -y && sudo apt auto-remove -y
 
 # Frontal Audio for Desktop
