@@ -15,6 +15,7 @@ code --install-extension michelemelluso.code-beautifier
 code --install-extension HookyQR.minify
 code --install-extension techer.open-in-browser
 code --install-extension formulahendry.auto-close-tag
+code --install-extension MS-vsliveshare.vsliveshare
 
 ## PYTHON
 code --install-extension ms-python.python

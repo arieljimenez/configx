@@ -1,4 +1,4 @@
-################### GOOD SHIT :ok_hand: ######################
+################### GOOD SHIT 👌🏼 ######################
 NODEVER='v8.11.1'
 
 # PATH STUFF
@@ -22,8 +22,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 ######################### ALIAS ##########################################
-# alias dnf='sudo apt update --fix-missing && sudo apt upgrade -y && sudo apt auto-remove -y'
-# alias klol='WINEPREFIX=~/LoL32 wineserver -k'
 alias dudir='du --max-depth=1 -h'
 
 alias dockerdc='docker rm $(docker ps -a -q)'
@@ -45,7 +43,7 @@ alias lsb='git branch'
 alias commit='git add . && git commit -m $1'
 # alias bclean='git checkout "${1:-master}" && git branch --merged "${1:-master}" | grep -v " ${1:-master}$" | xargs git branch -d'
 # alias up='git gc && git pull --rebase --prune $@ && git submodule update --init --recursive'
-#alias conto='git gc && git add . && git commit --amend --no-edit | git push -f origin $(git symbolic-ref --short -q HEAD)'
+# alias conto='git gc && git add . && git commit --amend --no-edit | git push -f origin $(git symbolic-ref --short -q HEAD)'
 
 # HELPERS
 mk () {
