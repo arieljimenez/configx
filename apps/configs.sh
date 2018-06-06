@@ -15,6 +15,7 @@ mkdir -p ~/.config/terminator/ # make sure that exist
 cp -f ../configs/config ~/.config/terminator/
 
 # VCode settings
+touch ~/.config/Code/User/settings.json && \
 mv ~/.config/Code/User/settings.json ~/.config/Code/User/settings.json_BAK && \
 cp ../configs/settings.json ~/.config/Code/User/settings.json
 

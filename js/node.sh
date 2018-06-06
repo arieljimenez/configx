@@ -1,7 +1,5 @@
 # JS stuff
 # - *Nvm: node 8.9.1 LTS / npm*
-# - *Webpack 2*
-# - *Elm 0.18*
 # - *React*
 
 # install latest (at the moment) nvm

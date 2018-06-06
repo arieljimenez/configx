@@ -1,6 +1,6 @@
-# Configx for Developer Environment
+# Configx for Linux Web Developer Environment
 
->The main idea is run a simple (or severals) bash script and :tada: developer environment **_up and runnig_** ...*YUP, like Docker but out of a containner*.
+>The main idea is run a simple (or severals) bash script and :tada: developer environment **_up and runnig_**.
 
 For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made for **ubuntu** and **xubuntu**, 'cause reasons and until now, **fedora** is not a dev friendly distribution *u_u*
 
@@ -13,37 +13,38 @@ For now only will run for ElementaryOS *(Mac'a'like)*, but eventualy i will made
 
 ## **Details**
 
----
+Create a new pair of ssh keys:
+
+`$ ssh-keygen -t rsa -b 4096 -C "ariel.jimenez2025@gmail.com"`
+
+Now, just left __do the thing__.
 
 ### JS
 
-- nvm: 0.33.7
-- node 8.9.1 LTS
-- npm 5.5.1
-- *Webpack 2* [not yet]
-- *Elm 0.18* [not yet]
-- *React* [not yet]
+- nvm
+- node
+- npm
+- yarn
+- react
+- react-native
 
 ### Golang
 
-- Golang 1.9.2
-- *Gorm* [not yet]
-- *Watcher* [not yet]
+- Golang
 
 ### Python
 
 - pip
-- *Virtualenv* [not yet]
+- Virtualenv
 
 ### Continuos Integration
 
 - Docker CE
-- *Vagrant* [not yet]
 - *Jenkins (needs Java)* [not yet]
 
 ### Text Editors
 
-- vim
+- Vim
 - Visual Studio Code: config + plugins :ok_hand:
 
 ## Apps

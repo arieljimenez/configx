@@ -25,8 +25,10 @@ if [ -f ~/.zshprofile ]; then
 fi
 
 # PATH STUFF
+NODE_VER='8.9.1'
+
 export PATH="$PATH:/usr/local/bin:/usr/local/go/bin:/home/$USER/Code/go/bin"
-export PATH="/home/$USER/.nvm/versions/node/v6.10.1/bin:$PATH"
+export PATH="/home/$USER/.nvm/versions/node/v$NODE_VER/bin:$PATH"
 export PATH="/usr/local/go/bin/:/home/$USER/Code/go/bin:$PATH"
 export PATH="/usr/local/jdk-10/bin:$PATH"
 export PATH="$PATH:/opt/firefox"
