@@ -5,7 +5,7 @@
 code --install-extension andyyaldoo.vscode-json
 code --install-extension lamartire.git-indicators
 code --install-extension bierner.markdown-emoji
-code --install-extension WakaTime.vscode-wakatime
+# code --install-extension WakaTime.vscode-wakatime
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension Tyriar.sort-lines
 code --install-extension robertohuertasm.vscode-icons
@@ -39,4 +39,3 @@ code --install-extension joeandaverde.vscode-elm-jump
 
 ## JSX
 code --install-extension vsmobile.vscode-react-native
-

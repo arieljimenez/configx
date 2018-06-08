@@ -1,5 +1,8 @@
 # ZSH
-mv ~/.zshrc ~/.zshrc_BAK && \
+if [ -f '~/.zshrc' ] ; then 
+    mv ~/.zshrc ~/.zshrc_BAK
+fi 
+
 cp ../configs/.zshrc ~/.zshrc && \
 cp ../configs/.zshprofile ~/.zshprofile
 

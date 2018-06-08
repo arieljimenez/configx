@@ -8,8 +8,9 @@ sudo apt install git \
                  vim \
                  python-pip \
                  apt-transport-https \
-                 -y
                  ca-certificates \
+                 curl \
+                 -y
 
 # Docker CE
 . docker.sh # after this, to start using docker, we need to $ reboot
