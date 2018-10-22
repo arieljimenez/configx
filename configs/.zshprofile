@@ -27,6 +27,7 @@ alias dudir='du --max-depth=1 -h'
 alias dockerdc='docker rm $(docker ps -a -q)'
 alias dockerdi='docker rmi $(docker images -a)'
 alias duu='du -ahc'
+alias codea='code --add ${1:-"."}'
 
 # projects
 alias pybanca='cd ~/Code/py/pybanca'
@@ -47,7 +48,7 @@ alias commit='git add . && git commit -m $1'
 
 # HELPERS
 mk () {
-  echo "Creating $1 dir and cd't"
-  mkdir $1
-  cd $1
+  echo "Creating ${1:-"test-dir"} dir and cd't"
+  mkdir ${1:-"test-dir"}
+  cd ${1:-"test-dir"}
 }
