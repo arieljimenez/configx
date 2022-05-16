@@ -1,0 +1,130 @@
+################### GOOD SHIT :ok_hand: ######################
+# JS STUFF
+NODEVER='v16.13.0'
+# if modify above, run bellow:
+# nvm alias default 16.13.0
+
+export PATH="$HOME/.nvm/versions/node/$NODEVER/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# export PATH="$PATH:/usr/local/bin:/usr/local/go/bin:$HOME/Code/go/bin"
+# export PATH="/usr/local/opt/openjdk/bin:$PATH"
+# export PATH="/usr/local/jdk-10/bin:$PATH"
+# export PATH="$PATH:/opt/firefox"
+# export PATH="~/Code/google-cloud-sdk/bin:$PATH"
+# export PATH="$HOME/.local/google-cloud-sdk/bin:$PATH"
+
+# GOLANG
+export GO111MODULE="on"
+export PATH="/usr/local/go/bin/:$HOME/code/go/bin:$PATH"
+export GOPATH="$HOME/code/go"
+export GOROOT="/usr/local/go"
+
+# REACT NATIVE EMULATOR STUFF
+export ANDROID_SDK=$HOME/Android/sdk
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
+export PATH=$PATH:$ANDROID_SDK/emulator/emulator
+export PATH=$PATH:$ANDROID_SDK/tools/bin
+export PATH=$PATH:$ANDROID_SDK/platform-tools
+# linux install dir to execute the the android studio
+export PATH=$PATH:$HOME/code/android-studio/bin
+
+# SDKs homes
+# export JAVA_HOME="$HOME/Library/jdk-11.jdk/Contents/Home"
+# export JAVA_HOME=`/usr/libexec/java_home`
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home"
+# export CPPFLAGS="-I/usr/local/opt/openjdk/includ"
+### Java
+# export PATH="$HOME/Library/jdk-11.jdk/Contents/Home/bin:$PATH"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
+
+###  Flutter  ###
+# export PATH="$PATH:/usr/local/flutter/bin"
+
+# export PATH="/usr/local/opt/libxml2/bin:$PATH"
+# export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+# export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+
+# export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+
+## DART ##
+# export PATH="$PATH:/usr/local/opt/dart/libexec"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+### auto nvm load
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+###
+
+######################### ALIAS ##########################################
+alias dudir='du --max-depth=1 -h'
+alias wcode="find . -not -path '*/node_*' -a \( -name '*.js' -o -name '*.jsx' -o -name '*.sh' \) | xargs cat | wc -l"
+alias dockerdc='docker rm $(docker ps -a -q)'
+alias dockerdi='docker rmi $(docker images -a)'
+alias duu='du -ahc'
+alias purge='curl -X PURGE'
+alias c='code'
+alias code='code'
+# projects
+# alias pybanca='cd ~/Code/py/pybanca'
+# alias gedetra='cd ~/Code/py/gedetra'
+# alias cd-freya-api='cd ~/Code/go/src/github.com/valhallacoders/freya-api-go'
+# alias godev='cd ~/Code/go/src/github.com/arieljimenez'
+
+#clients -- ~NYT~ Dcoker
+alias nn='docker-compose up -d'
+alias nnn='docker-compose down -v --remove-orphans'
+alias cms='cd ~/genome/cms'
+alias f='cd ~/code/freya-cms'
+alias a='cd ~/code/go/github.com/valhallacoders/freya-api-go'
+
+# Git
+alias save='git add -A && git commit -m "SAVEPOINT"'
+alias wip='git add -A && git commit -am "WIP"'
+alias undo='git reset HEAD~1 --mixed'
+alias lsb='git branch'
+alias gs='git status'
+alias gpp='git pull -p'
+alias ck='git checkout $1'
+alias gcmm='git checkout main'
+alias commit='git add . && git commit -m $1'
+# alias commit='git add . && git commit -m "[$(git branch --show-current)]: $1"'
+alias push='git push origin $(git branch --show-current)'
+# DANGER ZONE!!!
+alias bclean='git checkout "${1:-main}" && git branch --merged "${1:-main}" | grep -v " ${1:-main}$" | xargs git branch -d'
+# alias up='git gc && git pull --rebase --prune $@ && git submodule update --init --recursive'
+# alias conto='git gc && git add . && git commit --amend --no-edit | git push -f origin $(git symbolic-ref --short -q HEAD)'
+# /DANGER
+
+# android
+# alias run-android='~/Library/Android/sdk/tools/emulator -avd pixel &'
+
+# HELPERS
+mk () {
+  echo "Creating $1 dir and cd't"
+  mkdir $1
+  cd $1
+}
+
+# couldnt make an alias for it
+gitl () {
+  git log --graph --branches --oneline --decorate --color -n"${1:-10}"
+}
